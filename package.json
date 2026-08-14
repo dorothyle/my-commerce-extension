@@ -1,0 +1,24 @@
+{
+  "name": "commerce-cohort-project",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "@adobe/aio-commerce-lib-app": "^1.10.0",
+    "@adobe/aio-commerce-lib-config": "^1.6.0",
+    "@adobe/aio-commerce-sdk": "^1.4.1"
+  },
+  "devDependencies": {
+    "@tsconfig/bases": "^1.0.26",
+    "ts-loader": "^9.6.2",
+    "typescript": "^6.0.3"
+  },
+  "description": "A custom Adobe Commerce application. Fill description for your app.",
+  "scripts": {
+    "typecheck:actions": "tsc --noEmit -p tsconfig.json",
+    "typecheck": "npm run typecheck:actions",
+    "postinstall": "npx aio-commerce-lib-app hooks postinstall"
+  },
+  "imports": {
+    "#app.commerce.config": "./src/commerce-extensibility-1/.generated/app.commerce.config.js"
+  }
+}
