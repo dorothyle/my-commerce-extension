@@ -36,6 +36,15 @@
           }
         ]
       }
-    ]
+    ],
+    "responseConfig": {
+      "CORS": {
+        "origin": [
+            "https://main--my-commerce-storefront--dorothyle.aem.page",
+            "https://main--my-commerce-storefront--dorothyle.aem.live"
+        ],
+        "credentials": true
+      }
+    }
   }
 }
