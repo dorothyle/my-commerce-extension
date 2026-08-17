@@ -1,0 +1,8 @@
+# Dependencies
+node_modules/
+
+# App Builder generated/build output
+.generated/
+dist/
+.aio
+.env
